@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+ }
+
+/* Importing the font */
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');;
+    font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* This is the setting for the paragraph element */
+p{
+    font-family: 'Roboto';
+    font-size: 40px;
+    color: black; /* To change for Font Color*/
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 10%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    float: none;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+
+a:hover {
+    color: #fff;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    text-decoration: none; 
+}
+
+ul:hover li {
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    opacity: 0.5; 
+}
+
+ul:hover li:hover {
+    opacity: 100%;
+    color:green; 
+}
